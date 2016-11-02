@@ -1,7 +1,7 @@
 <?php
 // File Name: proxy.php
-// Bri's cookbook
-$api_key = '503d1a670aacb46ca5bfd8470e2fd18b';
+// gmail
+$api_key = 'db32e54143f260bffaed8a970bfd6dd7';
 
 
 $API_ENDPOINT = 'https://api.forecast.io/forecast/';
