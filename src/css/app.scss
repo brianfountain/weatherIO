@@ -1,0 +1,621 @@
+@import "partials/color";
+@import "partials/transitions";
+@import "partials/prefixes";
+@import "partials/breakpoints";
+@import url('https://fonts.googleapis.com/css?family=Quattrocento|Quattrocento+Sans');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgba(15, 24, 46, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    font-size: 14px;
+    color: $cloud-blue;
+    font-family: 'Quattrocento Sans', sans-serif;
+    width: 100%;
+    height: 110%;
+    /*- BREAKPOINTS -*/
+    @include break(tablet) { font-size: 16px
+    }
+    @include break(desktop, $desktop) {
+        font-size: 15px;
+    }
+    @include break(desktop, $lg-width) {
+        font-size: 16px;
+    }
+    @include break(desktop, $xl-width) {
+        font-size: 17px;
+    }
+}
+
+
+/*-- video background --*/
+
+.background {
+    display: none; width: 100%; height: 100%;
+    position: absolute; top: 0px; left: 0px;
+    z-index: -1;  margin: 0px; padding: 0px; overflow: hidden;
+	@include transition(opacity, 6s, $ease-out, 0s);
+   
+	&.fadeIn {
+        display: block;
+        opacity: 1.00;
+        @include transition(opacity, 3s, $ease-in, 0s);
+    }
+	
+    &.fadeOut {
+        display: block;
+        opacity: 0;
+    }
+	
+    .texture {
+        display: block; width: 100%; height: 100%; position: absolute;
+        top: 0px;  left: 0px; z-index: 2;
+        background: url(../media/images/texture.png) top left repeat transparent;
+        @include prefix(box-shadow, (inset 0px 0px 200px 20px rgba(0, 8, 15, 1.00)));
+    }
+    
+    #video-sun, #video-rain {
+        margin: 0px auto;
+        z-index: 1;
+        min-width: 110%;
+        min-height: 110%;
+        /*- BREAKPOINTS -*/
+        @include break(tablet) { display: none; }
+    }
+    
+    #video-rain {
+        visibility: hidden;
+    }
+    .poster {
+        width: 100%;
+        height: 100%;
+        margin: 0px auto;
+        background: url("../media/images/poster.jpg") top left no-repeat transparent;
+        background-size: cover;
+       /*- BREAKPOINTS -*/
+        @include break(tablet) {
+            display: block;
+            
+        }
+        @include break(desktop) {
+            display: none;
+        }
+    }
+}
+
+#main {
+    background: rgba(15, 24, 46, 0.8);
+    //@include break(tablet) { background: none }
+    width: 100%;  height: 100%; opacity: 0;
+    @include transition(opacity, 5s, $ease, 0);
+	
+	&.show { opacity: 1; }
+	
+	h1, h2, h3, h4, h5, h6 { font-family: 'Quattrocento', serif;}
+	h1 { font-size: 2.8em; }
+    h2 { font-size: 2.6em; }
+    h3 { font-size: 2.4em; font-weight: 300; }
+    h4 { font-size: 2em; font-weight: 200; }
+    h5 { font-size: 1.6em; font-weight: 100; }
+    p { font-size: 1.5em; }
+    /***
+    ** Current Time Indicator
+    ***/
+    #currentTimeBar {
+        text-align: center; color: white; background-color: $callout; padding: .2em 0 0;
+        font-size: .6em; font-style: italic; opacity: 0; @include prefix(transform, translate(0%,-100%));
+		@include transition((all), 1.8s, $circ, 0.2s); cursor: pointer;
+        
+        &:hover {
+            background: $mid-blue; color: black;
+        }
+        
+        &.show {
+			opacity: 1; @include prefix(transform, translate(0%, 0%));
+		}
+		
+        #centerTime {
+            height: 25px;
+            #sun {
+                height: 45px; width: 45px; margin: 25px auto;
+                @include prefix(animation, rotate 25s linear infinite);
+                svg {
+                    #rays {
+                        path { fill: $callout }
+                    }
+                }
+            }
+        }
+    }
+    /***
+    ** Begin Loading Bar
+    ***/
+    .loadingMessage {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -160px 0 0 -70px;
+        z-index: 100;
+        background: rgba(255, 255, 255, 0.5);
+        text-align: center;
+        width: 140px;
+        height: 140px;
+        display: block;
+        border-radius: 72px;
+        padding: 2em 1.3em;
+        span {
+            @include prefix(animation, scrollPulse 1s cubic-bezier(0.49, 0.03, 0.48, 1.05) infinite);
+            color: black;
+            font-size: .7em;
+        }
+    }
+	
+    .contain {
+        position: absolute; top: 0; left: 50%; width: 100%; margin-left: -50%;
+        
+        /*- BREAKPOINTS -*/
+        @include break(tablet) {
+            width: 80%;
+            margin-left: -40%;
+        }
+        @include break(tablet, $portrait) {
+            width: 90%;
+            margin-left: -45%;
+        }
+        @include break(desktop, $desktop) {
+            width: 80%;
+            margin-left: -40%;
+        }
+        @include break(desktop, $sm-width) {
+            width: 80%;
+            margin-left: -40%;
+        }
+        @include break(desktop, $md-width) {
+            width: 90%;
+            margin-left: -45%;
+        }
+    }
+    /***
+    ** Begin Introduction Card
+    ***/
+    #introCard {
+        z-index: 101; text-align: center; display: block; padding-top: 4em;
+		@include transition((opacity), 1.8s, $circ, 0);
+     		
+        &.hide { opacity: 0 }
+        .button { margin-bottom: 2em; }
+       	
+		h1 {
+            font-size: 5em;
+            text-transform: uppercase;
+            margin: 0;
+            line-height: 1;
+            @include break(tablet, $p-landscape) {
+                font-size: 3.5em !important;
+            }
+        }
+		h5 {
+            font-size: 2em;
+            text-transform: uppercase;
+            color: $mid-blue;
+            margin: 0;
+            line-height: 1;
+            margin-bottom: 0.5em;
+        }
+		
+        .centerHeader {
+            width: 30%; margin: 0 auto;
+            
+        }
+        p {
+            text-align: justify;
+			color: $light-blue;
+			font-size: 1.4em;
+			margin: 1.5em 0;
+            
+            @include break(tablet) {
+                font-size: 1.8em;
+            }
+        }
+       
+        // Skyline
+        svg#norfolkSkyline {
+            g {
+                path {
+                    fill: none;
+                    stroke: #b7c5d8;
+                    stroke-miterlimit: 10;
+                    stroke-width: 1px;
+                }
+            }
+        }
+        .virginiaIcon {
+            width: 100px;
+        }
+        // current weather on intro page
+        #currentWeather {
+            width: 100%; padding: 0; margin-bottom: 20px;
+            .header {
+                margin: 1em 0;
+            }
+            .mainTemperature { font-size: 5em; }
+            .weather-icon {
+                height: 50px; width: 50px; margin: 1em auto;
+            }
+            .currentTemp { font-size: .9em; text-align: center; margin: 0; }
+        }
+    } 
+	
+	/*** 
+	Main container with ALL weather information
+	***/
+	#weatherDetail {
+       color: white; z-index: 99; text-align: center;
+        
+        //display: none;
+		//&.show { display: block; }
+		
+        /***
+		** Applied to ALL hourly states. Only today's date will end up displaying
+		***/
+		#hourlyForecast {
+			z-index: 105; border: none; background: none; 
+			position: absolute; top: 350px; left: 50%; width: 100%; margin-left: -50%;
+            @include prefix(box-shadow, (none));
+            text-align: center; font-size: 0.7em !important;
+			
+			.cardToday {
+				color: $callout;
+   				font-size: 3em !important;
+				opacity: 0; @include transition((opacity), 0.8s, $circ, 0);
+				&.show { opacity: 1; }
+				text-transform: uppercase;
+            }        
+             
+			
+			ul {
+                list-style: none;
+                /***
+				** ALL #weatherByHour states
+				***/
+                 .weatherByHour {
+					width: 47%; float: left; border-bottom: 1px #283858 solid; font-size: 0.9em !important; background: rgba(1, 1, 1, 0.2);
+					@include prefix(box-shadow, (none)); border-right: none; border-left: none;
+					padding: 1em 2em; text-align: left; opacity: 0; 
+					opacity: 0; display: table; margin: 9px;
+				 
+					 &.show { opacity: 1; }
+							
+				    @include break(desktop, $sm-width) {
+                        width: 100%;
+                        margin: 9px 0;
+                    }
+                     
+                    p {
+                        font-size: 1.8em;
+                        padding-top: .2em;
+                        color: $light-blue;
+                    }
+                     
+                    .distributeHourElements {
+                        &:nth-child(1) {
+                            @include break(desktop) { width: 5%; }
+                        }
+						
+                        float: left; width: 100%; text-align: center;
+                        
+                        @include break(desktop) {
+                            margin: 0 1% 0 0; width: 17.5%; text-align: left;
+                        }
+					}
+					.reportTime {
+                         font-size: 3.5em; line-height: 1;
+                    }
+							
+					.weather-icon {
+				        width: 40px; height: 40px; margin: 5px auto;
+                        @include break(desktop, $sm-width) {
+                            width: 30px; height: 30px;
+                        }
+					}
+					
+					@for $i from 1 through 11 {	
+						&:nth-child(#{$i}) {
+							@include transition((opacity,transform), #{$i/2}s, $circ, 40ms);
+						}
+					}
+				}
+			}
+		}
+	
+		/****
+		// Main Parent level forecast Container
+		****/
+        #forecastWeek {
+         	position: absolute; top: 120px; left: 0;
+			
+            h1 { font-size: 4em; }
+            
+            p {
+                font-size: .9em;
+                line-height: 1.2em;
+                color: $light-blue;
+            }
+            
+            .maxMinTemps { font-size: 1.2em; }
+            .weather-icon {
+                width: 30px;
+                height: 30px;
+                opacity: 0.7;
+            }			
+			
+			.hoverInstructions {
+				background: rgba(0, 0, 0, 0.8); width: 300px;
+				color: white !important; font-size: 1.2em !important; border-top: 1px #283858 solid;
+				border-bottom: 1px #283858 solid; position: absolute;
+				top: 10%; left: 50%; padding: 1em 1.1em; margin-left: -150px;
+				opacity: 0; @include transition((opacity, transform), 0.8s, $circ, 0);
+				@include prefix(transform, translate(0%,-15%));
+			}
+			
+			// Supplemental weather detail
+            .thirds {
+                width: 100%; margin-bottom: 10px;
+				float: left;
+                p { font-size: .9em; }
+				
+				@include break(desktop, $sm-width) {
+					width: 31%;
+					p { font-size: 1em; }
+				}
+            }
+			
+			/*** 
+			First ul containing both weekly and hourly forecasts 
+			***/
+            ul {
+                list-style: none; display: inline;
+                
+				/*** 
+				Contains ALL days of the week.
+				** The first &:nth-child(1})is todays forecast
+				** All others are the remaining 7 day forecast with hidden hourly forecast because they don't exist in forecast io
+				***/
+                
+				.weatherByDate { 
+                    // #weatherByDate initial styles
+					border: 1px #1a2a45 solid; background: rgba(0, 0, 0, 0.3);
+                    width: 47%; margin: 9px; float: left; padding: 15px 10px 0 10px; height: 184px;
+                    border-top: 1px #283858 solid;
+                    border-bottom: 1px #283858 solid;
+                    @include prefix(box-shadow, (4px 9px 21px -2px rgba(0, 0, 0, 0.4)));
+                    opacity: 0;
+					// First #weatherByDate to handle today's weather flip card to show it's 7 day forecast
+                   
+					&.flipped {
+                       @include transition((all), 0.8s, $circ, 0);
+                       opacity: 0;
+                        
+						/***
+						** Hide the 7 days weekly forecast on click of show hourly
+						** The remaining instance of #weatherByDate .flipped 
+						***/
+						@for $i from 2 through 8 {
+							&:nth-child(#{$i}) {
+								opacity: 0 !important;
+							}
+						}
+                    }
+					
+					 // Today's weather card ONLY
+                    &:nth-child(1) {
+                        background: none; @include prefix(box-shadow, (none));
+                       	width: 46%; margin: 0px 27% 2% 27%; text-align: center; cursor: pointer;
+                        font-size: 1em !important; border: none;
+						@include transition((all), 1s, $circ, 40ms);
+                        height: 305px;
+                        
+                        /*- BREAKPOINTS -*/
+                        @include break(desktop, $sm-width) {
+                           	width: 72%; 
+							margin: 0px 14%;
+                        }
+						
+						&.in { opacity: 1; }
+						
+                        p { font-size: 1.3em; line-height: 1 }
+                        .maxMinTemps { font-size: 2em; }
+                        .weather-icon {
+                            width: 50px !important;
+                            height: 50px;
+                        }
+                        .cardReportDate { opacity: 0 }
+                        .cardToday { opacity: 1; }
+                    						
+						.dailyForecast {
+							/*** Show instructions
+							** On today's forecast state only
+							***/
+							&:hover {
+							   .hoverInstructions {
+									opacity: 1;
+									@include prefix(transform, translate(0%,0%))
+								}
+							}
+						}
+						
+                    }
+					
+                    // Remaining .weatherbyDate list items 
+                    @for $i from 2 through 8 {
+                        &:nth-child(#{$i}) {
+                            height: 290px; font-size: 1.2em; opacity: 0;
+							@include transition((all), #{$i/2}s, $circ, 40ms);
+                            @include prefix(transform, translateY(-10%));
+                            
+                        
+                            @include break(desktop, $lg-width) {
+                                height: 290px; font-size: 1em;
+                            }
+                        
+                            &.show {
+                                @include prefix(transform, translateY(0%));
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    
+                    /***
+				    ** BREAKPOINTS For .weatherByDate 7 Day forecast
+					***/
+                    @include break(tablet) {
+                        width: 47%;
+                        border-right: none;
+                        border-left: none;
+                        border-top: none;
+                        @include prefix(box-shadow, (none));
+                        margin: 9px;
+                    }
+                    @include break(tablet, $portrait) {
+                        
+                        border-right: none;
+                        border-left: none;
+                        border-top: none;
+                        @include prefix(box-shadow, (none));
+                    }
+				
+                    @include break(desktop, $sm-width) {
+                        width: 47%;
+                        margin: 9px;
+                   	}
+				
+                    @include break(desktop, $md-width) {
+                        width: 31%;
+                        margin: 12px;
+					}
+                    
+					@include break(desktop, $lg-width) {
+                        width: 13%;
+                        margin: 9px;
+					}
+				
+                    @include break(desktop, $xl-width) {
+                        width: 13%;
+                        margin: 9px;
+                    }
+                   
+                    // Show Daily forecast first
+                    .dailyForecast {
+                        opacity: 1; z-index: 104;
+                        @include transition((opacity, transform), 0.8s, $circ, 0.1);
+                        
+                        .cardReportDate { color: white; font-size: 1.5em }
+						
+                        .thirds { width: 100%; margin-bottom: 10px; }
+                        
+                        p { color: $light-blue }
+                    }
+                    
+					 /***
+                    *** Weather header report
+                    ***/
+                    .cardToday {
+                        opacity: 0; // Set visibility to none unless its the first
+                        position: absolute; left: 50%;
+                        margin: -24px 0 0 -50%; width: 100%; font-size: 3em !important;
+                        text-transform: uppercase; color: $callout;
+                        @include transition((opacity), 0.8s, $circ, 0); text-transform: uppercase;
+
+                        &.show { opacity: 1; }
+
+                        @include break(tablet, $portrait) {
+                             font-size: 2em !important;
+                        }
+                   }
+				}
+            }
+        }
+    }
+    // Cross application button
+    .button {
+        background: rgba(255, 255, 255, .2);
+        padding: 0.5em 1em;
+        position: relative;
+        padding: .8em;
+        cursor: pointer;
+        color: white;
+        font-family: 'Quattrocento', serif;
+        font-size: .9em;
+        text-transform: uppercase;
+        font-weight: 300;
+        @include transition((all), .5s, $circ, 0s);
+       
+		&:hover {
+            background: rgba(255, 255, 255, .7);
+            color: black;
+        }
+    }
+    /***
+    /** ICONS BASED ON WEATHER REPORT getIcon();
+    ***/
+    .weather-icon {
+        height: 70px;
+        width: 70px;
+        margin: 0 auto;
+    }
+    // Partly Cloudy Night Icon
+    .partly-cloudy-night {
+        background: transparent url("../media/images/partly-cloudy-night.svg") center no-repeat;
+    }
+    // Partly Cloudy Day Icon
+    .partly-cloudy-day {
+        background: transparent url("../media/images/partly-cloudy-day.svg") center no-repeat;
+    }
+    // Snow Icon
+    .snow {
+        background: transparent url("../media/images/snow.svg") center no-repeat;
+    }
+    // Rain Icon
+    .rain {
+        background: transparent url("../media/images/rain.svg") center no-repeat;
+    }
+    // Wind Icon
+    .wind {
+        background: transparent url("../media/images/wind.svg") center no-repeat;
+    }
+    // Clear Day
+    .clear-day {
+        background: transparent url("../media/images/clear-day.svg") center no-repeat;
+    }
+    // Freezing Rain
+    .clear-night {
+        background: transparent url("../media/images/clear-night.svg") center no-repeat;
+    }
+    // Sleet
+    .sleet {
+        background: transparent url("../media/images/sleet.svg") center no-repeat;
+    }
+    // Clear Night
+    .clear-night {
+        background: transparent url("../media/images/clear-night.svg") center no-repeat;
+    }
+    // Thunderstorms Day
+    .thunderstorms-day {
+        background: transparent url("../media/images/thunderstorms-day.svg") center no-repeat;
+    }
+    // Thunderstorms Night
+    .thunderstorms-night {
+        background: transparent url("../media/images/thunderstorms-night.svg") center no-repeat;
+    }
+    @keyframes rotate {
+        from {
+            transform: rotate(359.5deg);
+        }
+        to {
+            transform: rotate(0deg);
+        }
+    }
+}

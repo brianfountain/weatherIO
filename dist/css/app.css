@@ -1,0 +1,1665 @@
+@import url("https://fonts.googleapis.com/css?family=Quattrocento|Quattrocento+Sans");
+@-webkit-keyframes scrollPulse {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 0.7; } }
+
+@-moz-keyframes scrollPulse {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 0.7; } }
+
+@-o-keyframes scrollPulse {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 0.7; } }
+
+@keyframes scrollPulse {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 0.7; } }
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg), scale(0.8);
+    -moz-transform: rotate(0deg), scale(0.8);
+    -ms-transform: rotate(0deg), scale(0.8);
+    -o-transform: rotate(0deg), scale(0.8);
+    transform: rotate(0deg), scale(0.8); }
+  50% {
+    -webkit-transform: rotate(340deg), scale(1);
+    -moz-transform: rotate(340deg), scale(1);
+    -ms-transform: rotate(340deg), scale(1);
+    -o-transform: rotate(340deg), scale(1);
+    transform: rotate(340deg), scale(1); }
+  0% {
+    -webkit-transform: rotate(0deg), scale(0.8);
+    -moz-transform: rotate(0deg), scale(0.8);
+    -ms-transform: rotate(0deg), scale(0.8);
+    -o-transform: rotate(0deg), scale(0.8);
+    transform: rotate(0deg), scale(0.8); } }
+
+@-moz-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg), scale(0.8);
+    -moz-transform: rotate(0deg), scale(0.8);
+    -ms-transform: rotate(0deg), scale(0.8);
+    -o-transform: rotate(0deg), scale(0.8);
+    transform: rotate(0deg), scale(0.8); }
+  50% {
+    -webkit-transform: rotate(340deg), scale(1);
+    -moz-transform: rotate(340deg), scale(1);
+    -ms-transform: rotate(340deg), scale(1);
+    -o-transform: rotate(340deg), scale(1);
+    transform: rotate(340deg), scale(1); }
+  0% {
+    -webkit-transform: rotate(0deg), scale(0.8);
+    -moz-transform: rotate(0deg), scale(0.8);
+    -ms-transform: rotate(0deg), scale(0.8);
+    -o-transform: rotate(0deg), scale(0.8);
+    transform: rotate(0deg), scale(0.8); } }
+
+@-o-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg), scale(0.8);
+    -moz-transform: rotate(0deg), scale(0.8);
+    -ms-transform: rotate(0deg), scale(0.8);
+    -o-transform: rotate(0deg), scale(0.8);
+    transform: rotate(0deg), scale(0.8); }
+  50% {
+    -webkit-transform: rotate(340deg), scale(1);
+    -moz-transform: rotate(340deg), scale(1);
+    -ms-transform: rotate(340deg), scale(1);
+    -o-transform: rotate(340deg), scale(1);
+    transform: rotate(340deg), scale(1); }
+  0% {
+    -webkit-transform: rotate(0deg), scale(0.8);
+    -moz-transform: rotate(0deg), scale(0.8);
+    -ms-transform: rotate(0deg), scale(0.8);
+    -o-transform: rotate(0deg), scale(0.8);
+    transform: rotate(0deg), scale(0.8); } }
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg), scale(0.8);
+    -moz-transform: rotate(0deg), scale(0.8);
+    -ms-transform: rotate(0deg), scale(0.8);
+    -o-transform: rotate(0deg), scale(0.8);
+    transform: rotate(0deg), scale(0.8); }
+  50% {
+    -webkit-transform: rotate(340deg), scale(1);
+    -moz-transform: rotate(340deg), scale(1);
+    -ms-transform: rotate(340deg), scale(1);
+    -o-transform: rotate(340deg), scale(1);
+    transform: rotate(340deg), scale(1); }
+  0% {
+    -webkit-transform: rotate(0deg), scale(0.8);
+    -moz-transform: rotate(0deg), scale(0.8);
+    -ms-transform: rotate(0deg), scale(0.8);
+    -o-transform: rotate(0deg), scale(0.8);
+    transform: rotate(0deg), scale(0.8); } }
+
+/*-- device orientation width --*/
+/*-- desktop variable widths --*/
+/*-- desktop variable heights --*/
+/*
+@mixin midWidth($minwidth, $maxWidth) {
+    @if ($minwidth > $landscape) and ($maxwidth < $md-width) {
+        @media (max-width: $maxwidth) and (min-width: $minwidth) { @content; }
+  }
+}
+*/
+/* line 6, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* line 11, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+body {
+  background: #0f182e;
+  -webkit-transform: translate3d(0, 0, 0);
+  font-size: 14px;
+  color: #d8e2e4;
+  font-family: 'Quattrocento Sans', sans-serif;
+  width: 100%;
+  height: 110%;
+  /*- BREAKPOINTS -*/ }
+
+@media (max-width: 1024px) {
+  /* line 11, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  body {
+    font-size: 16px; } }
+
+@media (min-width: 1025px) {
+  /* line 11, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  body {
+    font-size: 15px; } }
+
+@media (min-width: 1600px) {
+  /* line 11, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  body {
+    font-size: 16px; } }
+
+@media (min-width: 1920px) {
+  /* line 11, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  body {
+    font-size: 17px; } }
+
+/*-- video background --*/
+/* line 36, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+.background {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 6s;
+  -moz-transition-duration: 6s;
+  -o-transition-duration: 6s;
+  transition-duration: 6s;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.345, 0, 1);
+  -moz-transition-timing-function: cubic-bezier(0, 0.345, 0, 1);
+  -o-transition-timing-function: cubic-bezier(0, 0.345, 0, 1);
+  transition-timing-function: cubic-bezier(0, 0.345, 0, 1);
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s; }
+
+/* line 42, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+.background.fadeIn {
+  display: block;
+  opacity: 1.00;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 3s;
+  -moz-transition-duration: 3s;
+  -o-transition-duration: 3s;
+  transition-duration: 3s;
+  -webkit-transition-timing-function: cubic-bezier(1, 0, 0.345, 0);
+  -moz-transition-timing-function: cubic-bezier(1, 0, 0.345, 0);
+  -o-transition-timing-function: cubic-bezier(1, 0, 0.345, 0);
+  transition-timing-function: cubic-bezier(1, 0, 0.345, 0);
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s; }
+
+/* line 48, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+.background.fadeOut {
+  display: block;
+  opacity: 0; }
+
+/* line 53, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+.background .texture {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  background: url(../media/images/texture.png) top left repeat transparent;
+  -webkit-box-shadow: inset 0px 0px 200px 20px #00080f;
+  -moz-box-shadow: inset 0px 0px 200px 20px #00080f;
+  -ms-box-shadow: inset 0px 0px 200px 20px #00080f;
+  -o-box-shadow: inset 0px 0px 200px 20px #00080f;
+  box-shadow: inset 0px 0px 200px 20px #00080f; }
+
+/* line 60, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+.background #video-sun, .background #video-rain {
+  margin: 0px auto;
+  z-index: 1;
+  min-width: 110%;
+  min-height: 110%;
+  /*- BREAKPOINTS -*/ }
+
+@media (max-width: 1024px) {
+  /* line 60, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  .background #video-sun, .background #video-rain {
+    display: none; } }
+
+/* line 69, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+.background #video-rain {
+  visibility: hidden; }
+
+/* line 72, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+.background .poster {
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  background: url("../media/images/poster.jpg") top left no-repeat transparent;
+  background-size: cover;
+  /*- BREAKPOINTS -*/ }
+
+@media (max-width: 1024px) {
+  /* line 72, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  .background .poster {
+    display: block; } }
+
+@media (min-width: 1025px) {
+  /* line 72, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  .background .poster {
+    display: none; } }
+
+/* line 89, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main {
+  background: rgba(15, 24, 46, 0.8);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 5s;
+  -moz-transition-duration: 5s;
+  -o-transition-duration: 5s;
+  transition-duration: 5s;
+  -webkit-transition-timing-function: cubic-bezier(0, 0.345, 0, 1);
+  -moz-transition-timing-function: cubic-bezier(0, 0.345, 0, 1);
+  -o-transition-timing-function: cubic-bezier(0, 0.345, 0, 1);
+  transition-timing-function: cubic-bezier(0, 0.345, 0, 1);
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0;
+  /***
+    ** Current Time Indicator
+    ***/
+  /***
+    ** Begin Loading Bar
+    ***/
+  /***
+    ** Begin Introduction Card
+    ***/
+  /*** 
+	Main container with ALL weather information
+	***/
+  /***
+    /** ICONS BASED ON WEATHER REPORT getIcon();
+    ***/ }
+
+/* line 95, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main.show {
+  opacity: 1; }
+
+/* line 97, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
+  font-family: 'Quattrocento', serif; }
+
+/* line 98, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main h1 {
+  font-size: 2.8em; }
+
+/* line 99, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main h2 {
+  font-size: 2.6em; }
+
+/* line 100, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main h3 {
+  font-size: 2.4em;
+  font-weight: 300; }
+
+/* line 101, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main h4 {
+  font-size: 2em;
+  font-weight: 200; }
+
+/* line 102, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main h5 {
+  font-size: 1.6em;
+  font-weight: 100; }
+
+/* line 103, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main p {
+  font-size: 1.5em; }
+
+/* line 107, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #currentTimeBar {
+  text-align: center;
+  color: white;
+  background-color: #b79718;
+  padding: .2em 0 0;
+  font-size: .6em;
+  font-style: italic;
+  opacity: 0;
+  -webkit-transform: translate(0%, -100%);
+  -moz-transform: translate(0%, -100%);
+  -ms-transform: translate(0%, -100%);
+  -o-transform: translate(0%, -100%);
+  transform: translate(0%, -100%);
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1.8s;
+  -moz-transition-duration: 1.8s;
+  -o-transition-duration: 1.8s;
+  transition-duration: 1.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -moz-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -o-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  cursor: pointer; }
+
+/* line 112, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #currentTimeBar:hover {
+  background: #bacae4;
+  color: black; }
+
+/* line 116, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #currentTimeBar.show {
+  opacity: 1;
+  -webkit-transform: translate(0%, 0%);
+  -moz-transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+  -o-transform: translate(0%, 0%);
+  transform: translate(0%, 0%); }
+
+/* line 120, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #currentTimeBar #centerTime {
+  height: 25px; }
+
+/* line 122, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #currentTimeBar #centerTime #sun {
+  height: 45px;
+  width: 45px;
+  margin: 25px auto;
+  -webkit-animation: rotate 25s linear infinite;
+  -moz-animation: rotate 25s linear infinite;
+  -ms-animation: rotate 25s linear infinite;
+  -o-animation: rotate 25s linear infinite;
+  animation: rotate 25s linear infinite; }
+
+/* line 127, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #currentTimeBar #centerTime #sun svg #rays path {
+  fill: #b79718; }
+
+/* line 136, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main .loadingMessage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -160px 0 0 -70px;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  width: 140px;
+  height: 140px;
+  display: block;
+  border-radius: 72px;
+  padding: 2em 1.3em; }
+
+/* line 149, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main .loadingMessage span {
+  -webkit-animation: scrollPulse 1s cubic-bezier(0.49, 0.03, 0.48, 1.05) infinite;
+  -moz-animation: scrollPulse 1s cubic-bezier(0.49, 0.03, 0.48, 1.05) infinite;
+  -ms-animation: scrollPulse 1s cubic-bezier(0.49, 0.03, 0.48, 1.05) infinite;
+  -o-animation: scrollPulse 1s cubic-bezier(0.49, 0.03, 0.48, 1.05) infinite;
+  animation: scrollPulse 1s cubic-bezier(0.49, 0.03, 0.48, 1.05) infinite;
+  color: black;
+  font-size: .7em; }
+
+/* line 156, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main .contain {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  margin-left: -50%;
+  /*- BREAKPOINTS -*/ }
+
+@media (max-width: 1024px) {
+  /* line 156, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  #main .contain {
+    width: 80%;
+    margin-left: -40%; } }
+
+@media (orientation: portrait) {
+  /* line 156, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  #main .contain {
+    width: 90%;
+    margin-left: -45%; } }
+
+@media (min-width: 1025px) {
+  /* line 156, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  #main .contain {
+    width: 80%;
+    margin-left: -40%; } }
+
+@media (min-width: 1280px) {
+  /* line 156, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  #main .contain {
+    width: 80%;
+    margin-left: -40%; } }
+
+@media (min-width: 1366px) {
+  /* line 156, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  #main .contain {
+    width: 90%;
+    margin-left: -45%; } }
+
+/* line 184, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #introCard {
+  z-index: 101;
+  text-align: center;
+  display: block;
+  padding-top: 4em;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 1.8s;
+  -moz-transition-duration: 1.8s;
+  -o-transition-duration: 1.8s;
+  transition-duration: 1.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -moz-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -o-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0; }
+
+/* line 188, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #introCard.hide {
+  opacity: 0; }
+
+/* line 189, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #introCard .button {
+  margin-bottom: 2em; }
+
+/* line 191, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #introCard h1 {
+  font-size: 5em;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1; }
+
+/* line 200, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #introCard h5 {
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #bacae4;
+  margin: 0;
+  line-height: 1;
+  margin-bottom: 0.5em; }
+
+/* line 209, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #introCard .centerHeader {
+  width: 30%;
+  margin: 0 auto; }
+
+/* line 213, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #introCard p {
+  text-align: justify;
+  color: #96afda;
+  font-size: 1.4em;
+  margin: 1.5em 0; }
+
+@media (max-width: 1024px) {
+  /* line 213, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  #main #introCard p {
+    font-size: 1.8em; } }
+
+/* line 227, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #introCard svg#norfolkSkyline g path {
+  fill: none;
+  stroke: #b7c5d8;
+  stroke-miterlimit: 10;
+  stroke-width: 1px; }
+
+/* line 235, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #introCard .virginiaIcon {
+  width: 100px; }
+
+/* line 239, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #introCard #currentWeather {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px; }
+
+/* line 241, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #introCard #currentWeather .header {
+  margin: 1em 0; }
+
+/* line 244, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #introCard #currentWeather .mainTemperature {
+  font-size: 5em; }
+
+/* line 245, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #introCard #currentWeather .weather-icon {
+  height: 50px;
+  width: 50px;
+  margin: 1em auto; }
+
+/* line 248, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #introCard #currentWeather .currentTemp {
+  font-size: .9em;
+  text-align: center;
+  margin: 0; }
+
+/* line 255, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail {
+  color: white;
+  z-index: 99;
+  text-align: center;
+  /***
+		** Applied to ALL hourly states. Only today's date will end up displaying
+		***/
+  /****
+		// Main Parent level forecast Container
+		****/ }
+
+/* line 264, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #hourlyForecast {
+  z-index: 105;
+  border: none;
+  background: none;
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  width: 100%;
+  margin-left: -50%;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  text-align: center;
+  font-size: 0.7em !important; }
+
+/* line 270, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #hourlyForecast .cardToday {
+  color: #b79718;
+  font-size: 3em !important;
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -moz-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -o-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0;
+  text-transform: uppercase; }
+
+/* line 274, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #hourlyForecast .cardToday.show {
+  opacity: 1; }
+
+/* line 279, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #hourlyForecast ul {
+  list-style: none;
+  /***
+				** ALL #weatherByHour states
+				***/ }
+
+/* line 284, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #hourlyForecast ul .weatherByHour {
+  width: 47%;
+  float: left;
+  border-bottom: 1px #283858 solid;
+  font-size: 0.9em !important;
+  background: rgba(1, 1, 1, 0.2);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  border-right: none;
+  border-left: none;
+  padding: 1em 2em;
+  text-align: left;
+  opacity: 0;
+  opacity: 0;
+  display: table;
+  margin: 9px; }
+
+/* line 290, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #hourlyForecast ul .weatherByHour.show {
+  opacity: 1; }
+
+@media (min-width: 1280px) {
+  /* line 284, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  #main #weatherDetail #hourlyForecast ul .weatherByHour {
+    width: 100%;
+    margin: 9px 0; } }
+
+/* line 297, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #hourlyForecast ul .weatherByHour p {
+  font-size: 1.8em;
+  padding-top: .2em;
+  color: #96afda; }
+
+/* line 303, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #hourlyForecast ul .weatherByHour .distributeHourElements {
+  float: left;
+  width: 100%;
+  text-align: center; }
+
+@media (min-width: 1025px) {
+  /* line 304, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  #main #weatherDetail #hourlyForecast ul .weatherByHour .distributeHourElements:nth-child(1) {
+    width: 5%; } }
+
+@media (min-width: 1025px) {
+  /* line 303, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  #main #weatherDetail #hourlyForecast ul .weatherByHour .distributeHourElements {
+    margin: 0 1% 0 0;
+    width: 17.5%;
+    text-align: left; } }
+
+/* line 314, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #hourlyForecast ul .weatherByHour .reportTime {
+  font-size: 3.5em;
+  line-height: 1; }
+
+/* line 318, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #hourlyForecast ul .weatherByHour .weather-icon {
+  width: 40px;
+  height: 40px;
+  margin: 5px auto; }
+
+@media (min-width: 1280px) {
+  /* line 318, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  #main #weatherDetail #hourlyForecast ul .weatherByHour .weather-icon {
+    width: 30px;
+    height: 30px; } }
+
+/* line 325, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #hourlyForecast ul .weatherByHour:nth-child(1) {
+  -webkit-transition-property: opacity, transform;
+  -moz-transition-property: opacity, transform;
+  -o-transition-property: opacity, transform;
+  transition-property: opacity, transform;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -moz-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -o-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -webkit-transition-delay: 40ms;
+  -moz-transition-delay: 40ms;
+  -o-transition-delay: 40ms;
+  transition-delay: 40ms; }
+
+/* line 325, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #hourlyForecast ul .weatherByHour:nth-child(2) {
+  -webkit-transition-property: opacity, transform;
+  -moz-transition-property: opacity, transform;
+  -o-transition-property: opacity, transform;
+  transition-property: opacity, transform;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -moz-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -o-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -webkit-transition-delay: 40ms;
+  -moz-transition-delay: 40ms;
+  -o-transition-delay: 40ms;
+  transition-delay: 40ms; }
+
+/* line 325, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #hourlyForecast ul .weatherByHour:nth-child(3) {
+  -webkit-transition-property: opacity, transform;
+  -moz-transition-property: opacity, transform;
+  -o-transition-property: opacity, transform;
+  transition-property: opacity, transform;
+  -webkit-transition-duration: 1.5s;
+  -moz-transition-duration: 1.5s;
+  -o-transition-duration: 1.5s;
+  transition-duration: 1.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -moz-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -o-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -webkit-transition-delay: 40ms;
+  -moz-transition-delay: 40ms;
+  -o-transition-delay: 40ms;
+  transition-delay: 40ms; }
+
+/* line 325, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #hourlyForecast ul .weatherByHour:nth-child(4) {
+  -webkit-transition-property: opacity, transform;
+  -moz-transition-property: opacity, transform;
+  -o-transition-property: opacity, transform;
+  transition-property: opacity, transform;
+  -webkit-transition-duration: 2s;
+  -moz-transition-duration: 2s;
+  -o-transition-duration: 2s;
+  transition-duration: 2s;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -moz-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -o-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -webkit-transition-delay: 40ms;
+  -moz-transition-delay: 40ms;
+  -o-transition-delay: 40ms;
+  transition-delay: 40ms; }
+
+/* line 325, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #hourlyForecast ul .weatherByHour:nth-child(5) {
+  -webkit-transition-property: opacity, transform;
+  -moz-transition-property: opacity, transform;
+  -o-transition-property: opacity, transform;
+  transition-property: opacity, transform;
+  -webkit-transition-duration: 2.5s;
+  -moz-transition-duration: 2.5s;
+  -o-transition-duration: 2.5s;
+  transition-duration: 2.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -moz-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -o-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -webkit-transition-delay: 40ms;
+  -moz-transition-delay: 40ms;
+  -o-transition-delay: 40ms;
+  transition-delay: 40ms; }
+
+/* line 325, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #hourlyForecast ul .weatherByHour:nth-child(6) {
+  -webkit-transition-property: opacity, transform;
+  -moz-transition-property: opacity, transform;
+  -o-transition-property: opacity, transform;
+  transition-property: opacity, transform;
+  -webkit-transition-duration: 3s;
+  -moz-transition-duration: 3s;
+  -o-transition-duration: 3s;
+  transition-duration: 3s;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -moz-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -o-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -webkit-transition-delay: 40ms;
+  -moz-transition-delay: 40ms;
+  -o-transition-delay: 40ms;
+  transition-delay: 40ms; }
+
+/* line 325, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #hourlyForecast ul .weatherByHour:nth-child(7) {
+  -webkit-transition-property: opacity, transform;
+  -moz-transition-property: opacity, transform;
+  -o-transition-property: opacity, transform;
+  transition-property: opacity, transform;
+  -webkit-transition-duration: 3.5s;
+  -moz-transition-duration: 3.5s;
+  -o-transition-duration: 3.5s;
+  transition-duration: 3.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -moz-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -o-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -webkit-transition-delay: 40ms;
+  -moz-transition-delay: 40ms;
+  -o-transition-delay: 40ms;
+  transition-delay: 40ms; }
+
+/* line 325, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #hourlyForecast ul .weatherByHour:nth-child(8) {
+  -webkit-transition-property: opacity, transform;
+  -moz-transition-property: opacity, transform;
+  -o-transition-property: opacity, transform;
+  transition-property: opacity, transform;
+  -webkit-transition-duration: 4s;
+  -moz-transition-duration: 4s;
+  -o-transition-duration: 4s;
+  transition-duration: 4s;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -moz-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -o-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -webkit-transition-delay: 40ms;
+  -moz-transition-delay: 40ms;
+  -o-transition-delay: 40ms;
+  transition-delay: 40ms; }
+
+/* line 325, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #hourlyForecast ul .weatherByHour:nth-child(9) {
+  -webkit-transition-property: opacity, transform;
+  -moz-transition-property: opacity, transform;
+  -o-transition-property: opacity, transform;
+  transition-property: opacity, transform;
+  -webkit-transition-duration: 4.5s;
+  -moz-transition-duration: 4.5s;
+  -o-transition-duration: 4.5s;
+  transition-duration: 4.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -moz-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -o-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -webkit-transition-delay: 40ms;
+  -moz-transition-delay: 40ms;
+  -o-transition-delay: 40ms;
+  transition-delay: 40ms; }
+
+/* line 325, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #hourlyForecast ul .weatherByHour:nth-child(10) {
+  -webkit-transition-property: opacity, transform;
+  -moz-transition-property: opacity, transform;
+  -o-transition-property: opacity, transform;
+  transition-property: opacity, transform;
+  -webkit-transition-duration: 5s;
+  -moz-transition-duration: 5s;
+  -o-transition-duration: 5s;
+  transition-duration: 5s;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -moz-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -o-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -webkit-transition-delay: 40ms;
+  -moz-transition-delay: 40ms;
+  -o-transition-delay: 40ms;
+  transition-delay: 40ms; }
+
+/* line 325, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #hourlyForecast ul .weatherByHour:nth-child(11) {
+  -webkit-transition-property: opacity, transform;
+  -moz-transition-property: opacity, transform;
+  -o-transition-property: opacity, transform;
+  transition-property: opacity, transform;
+  -webkit-transition-duration: 5.5s;
+  -moz-transition-duration: 5.5s;
+  -o-transition-duration: 5.5s;
+  transition-duration: 5.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -moz-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -o-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -webkit-transition-delay: 40ms;
+  -moz-transition-delay: 40ms;
+  -o-transition-delay: 40ms;
+  transition-delay: 40ms; }
+
+/* line 337, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  /*** 
+			First ul containing both weekly and hourly forecasts 
+			***/ }
+
+/* line 340, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek h1 {
+  font-size: 4em; }
+
+/* line 342, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek p {
+  font-size: .9em;
+  line-height: 1.2em;
+  color: #96afda; }
+
+/* line 348, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek .maxMinTemps {
+  font-size: 1.2em; }
+
+/* line 349, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek .weather-icon {
+  width: 30px;
+  height: 30px;
+  opacity: 0.7; }
+
+/* line 355, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek .hoverInstructions {
+  background: rgba(0, 0, 0, 0.8);
+  width: 300px;
+  color: white !important;
+  font-size: 1.2em !important;
+  border-top: 1px #283858 solid;
+  border-bottom: 1px #283858 solid;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  padding: 1em 1.1em;
+  margin-left: -150px;
+  opacity: 0;
+  -webkit-transition-property: opacity, transform;
+  -moz-transition-property: opacity, transform;
+  -o-transition-property: opacity, transform;
+  transition-property: opacity, transform;
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -moz-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -o-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0;
+  -webkit-transform: translate(0%, -15%);
+  -moz-transform: translate(0%, -15%);
+  -ms-transform: translate(0%, -15%);
+  -o-transform: translate(0%, -15%);
+  transform: translate(0%, -15%); }
+
+/* line 365, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek .thirds {
+  width: 100%;
+  margin-bottom: 10px;
+  float: left; }
+
+/* line 368, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek .thirds p {
+  font-size: .9em; }
+
+@media (min-width: 1280px) {
+  /* line 365, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  #main #weatherDetail #forecastWeek .thirds {
+    width: 31%; }
+  /* line 372, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  #main #weatherDetail #forecastWeek .thirds p {
+    font-size: 1em; } }
+
+/* line 379, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul {
+  list-style: none;
+  display: inline;
+  /*** 
+				Contains ALL days of the week.
+				** The first &:nth-child(1})is todays forecast
+				** All others are the remaining 7 day forecast with hidden hourly forecast because they don't exist in forecast io
+				***/ }
+
+/* line 388, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate {
+  border: 1px #1a2a45 solid;
+  background: rgba(0, 0, 0, 0.3);
+  width: 47%;
+  margin: 9px;
+  float: left;
+  padding: 15px 10px 0 10px;
+  height: 184px;
+  border-top: 1px #283858 solid;
+  border-bottom: 1px #283858 solid;
+  -webkit-box-shadow: 4px 9px 21px -2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 9px 21px -2px rgba(0, 0, 0, 0.4);
+  -ms-box-shadow: 4px 9px 21px -2px rgba(0, 0, 0, 0.4);
+  -o-box-shadow: 4px 9px 21px -2px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 9px 21px -2px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  /***
+				    ** BREAKPOINTS For .weatherByDate 7 Day forecast
+					***/
+  /***
+                    *** Weather header report
+                    ***/ }
+
+/* line 398, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate.flipped {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -moz-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -o-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0;
+  opacity: 0;
+  /***
+						** Hide the 7 days weekly forecast on click of show hourly
+						** The remaining instance of #weatherByDate .flipped 
+						***/ }
+
+/* line 406, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate.flipped:nth-child(2) {
+  opacity: 0 !important; }
+
+/* line 406, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate.flipped:nth-child(3) {
+  opacity: 0 !important; }
+
+/* line 406, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate.flipped:nth-child(4) {
+  opacity: 0 !important; }
+
+/* line 406, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate.flipped:nth-child(5) {
+  opacity: 0 !important; }
+
+/* line 406, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate.flipped:nth-child(6) {
+  opacity: 0 !important; }
+
+/* line 406, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate.flipped:nth-child(7) {
+  opacity: 0 !important; }
+
+/* line 406, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate.flipped:nth-child(8) {
+  opacity: 0 !important; }
+
+/* line 414, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(1) {
+  background: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  width: 46%;
+  margin: 0px 27% 2% 27%;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1em !important;
+  border: none;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -moz-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -o-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -webkit-transition-delay: 40ms;
+  -moz-transition-delay: 40ms;
+  -o-transition-delay: 40ms;
+  transition-delay: 40ms;
+  height: 305px;
+  /*- BREAKPOINTS -*/ }
+
+@media (min-width: 1280px) {
+  /* line 414, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  #main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(1) {
+    width: 72%;
+    margin: 0px 14%; } }
+
+/* line 427, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(1).in {
+  opacity: 1; }
+
+/* line 429, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(1) p {
+  font-size: 1.3em;
+  line-height: 1; }
+
+/* line 430, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(1) .maxMinTemps {
+  font-size: 2em; }
+
+/* line 431, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(1) .weather-icon {
+  width: 50px !important;
+  height: 50px; }
+
+/* line 435, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(1) .cardReportDate {
+  opacity: 0; }
+
+/* line 436, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(1) .cardToday {
+  opacity: 1; }
+
+/* line 438, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(1) .dailyForecast {
+  /*** Show instructions
+							** On today's forecast state only
+							***/ }
+
+/* line 443, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(1) .dailyForecast:hover .hoverInstructions {
+  opacity: 1;
+  -webkit-transform: translate(0%, 0%);
+  -moz-transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+  -o-transform: translate(0%, 0%);
+  transform: translate(0%, 0%); }
+
+/* line 453, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(2) {
+  height: 290px;
+  font-size: 1.2em;
+  opacity: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -moz-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -o-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -webkit-transition-delay: 40ms;
+  -moz-transition-delay: 40ms;
+  -o-transition-delay: 40ms;
+  transition-delay: 40ms;
+  -webkit-transform: translateY(-10%);
+  -moz-transform: translateY(-10%);
+  -ms-transform: translateY(-10%);
+  -o-transform: translateY(-10%);
+  transform: translateY(-10%); }
+
+@media (min-width: 1600px) {
+  /* line 453, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  #main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(2) {
+    height: 290px;
+    font-size: 1em; } }
+
+/* line 464, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(2).show {
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  transform: translateY(0%);
+  opacity: 1; }
+
+/* line 453, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(3) {
+  height: 290px;
+  font-size: 1.2em;
+  opacity: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1.5s;
+  -moz-transition-duration: 1.5s;
+  -o-transition-duration: 1.5s;
+  transition-duration: 1.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -moz-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -o-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -webkit-transition-delay: 40ms;
+  -moz-transition-delay: 40ms;
+  -o-transition-delay: 40ms;
+  transition-delay: 40ms;
+  -webkit-transform: translateY(-10%);
+  -moz-transform: translateY(-10%);
+  -ms-transform: translateY(-10%);
+  -o-transform: translateY(-10%);
+  transform: translateY(-10%); }
+
+@media (min-width: 1600px) {
+  /* line 453, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  #main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(3) {
+    height: 290px;
+    font-size: 1em; } }
+
+/* line 464, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(3).show {
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  transform: translateY(0%);
+  opacity: 1; }
+
+/* line 453, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(4) {
+  height: 290px;
+  font-size: 1.2em;
+  opacity: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 2s;
+  -moz-transition-duration: 2s;
+  -o-transition-duration: 2s;
+  transition-duration: 2s;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -moz-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -o-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -webkit-transition-delay: 40ms;
+  -moz-transition-delay: 40ms;
+  -o-transition-delay: 40ms;
+  transition-delay: 40ms;
+  -webkit-transform: translateY(-10%);
+  -moz-transform: translateY(-10%);
+  -ms-transform: translateY(-10%);
+  -o-transform: translateY(-10%);
+  transform: translateY(-10%); }
+
+@media (min-width: 1600px) {
+  /* line 453, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  #main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(4) {
+    height: 290px;
+    font-size: 1em; } }
+
+/* line 464, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(4).show {
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  transform: translateY(0%);
+  opacity: 1; }
+
+/* line 453, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(5) {
+  height: 290px;
+  font-size: 1.2em;
+  opacity: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 2.5s;
+  -moz-transition-duration: 2.5s;
+  -o-transition-duration: 2.5s;
+  transition-duration: 2.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -moz-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -o-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -webkit-transition-delay: 40ms;
+  -moz-transition-delay: 40ms;
+  -o-transition-delay: 40ms;
+  transition-delay: 40ms;
+  -webkit-transform: translateY(-10%);
+  -moz-transform: translateY(-10%);
+  -ms-transform: translateY(-10%);
+  -o-transform: translateY(-10%);
+  transform: translateY(-10%); }
+
+@media (min-width: 1600px) {
+  /* line 453, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  #main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(5) {
+    height: 290px;
+    font-size: 1em; } }
+
+/* line 464, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(5).show {
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  transform: translateY(0%);
+  opacity: 1; }
+
+/* line 453, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(6) {
+  height: 290px;
+  font-size: 1.2em;
+  opacity: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 3s;
+  -moz-transition-duration: 3s;
+  -o-transition-duration: 3s;
+  transition-duration: 3s;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -moz-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -o-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -webkit-transition-delay: 40ms;
+  -moz-transition-delay: 40ms;
+  -o-transition-delay: 40ms;
+  transition-delay: 40ms;
+  -webkit-transform: translateY(-10%);
+  -moz-transform: translateY(-10%);
+  -ms-transform: translateY(-10%);
+  -o-transform: translateY(-10%);
+  transform: translateY(-10%); }
+
+@media (min-width: 1600px) {
+  /* line 453, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  #main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(6) {
+    height: 290px;
+    font-size: 1em; } }
+
+/* line 464, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(6).show {
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  transform: translateY(0%);
+  opacity: 1; }
+
+/* line 453, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(7) {
+  height: 290px;
+  font-size: 1.2em;
+  opacity: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 3.5s;
+  -moz-transition-duration: 3.5s;
+  -o-transition-duration: 3.5s;
+  transition-duration: 3.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -moz-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -o-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -webkit-transition-delay: 40ms;
+  -moz-transition-delay: 40ms;
+  -o-transition-delay: 40ms;
+  transition-delay: 40ms;
+  -webkit-transform: translateY(-10%);
+  -moz-transform: translateY(-10%);
+  -ms-transform: translateY(-10%);
+  -o-transform: translateY(-10%);
+  transform: translateY(-10%); }
+
+@media (min-width: 1600px) {
+  /* line 453, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  #main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(7) {
+    height: 290px;
+    font-size: 1em; } }
+
+/* line 464, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(7).show {
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  transform: translateY(0%);
+  opacity: 1; }
+
+/* line 453, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(8) {
+  height: 290px;
+  font-size: 1.2em;
+  opacity: 0;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 4s;
+  -moz-transition-duration: 4s;
+  -o-transition-duration: 4s;
+  transition-duration: 4s;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -moz-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -o-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -webkit-transition-delay: 40ms;
+  -moz-transition-delay: 40ms;
+  -o-transition-delay: 40ms;
+  transition-delay: 40ms;
+  -webkit-transform: translateY(-10%);
+  -moz-transform: translateY(-10%);
+  -ms-transform: translateY(-10%);
+  -o-transform: translateY(-10%);
+  transform: translateY(-10%); }
+
+@media (min-width: 1600px) {
+  /* line 453, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  #main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(8) {
+    height: 290px;
+    font-size: 1em; } }
+
+/* line 464, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate:nth-child(8).show {
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  transform: translateY(0%);
+  opacity: 1; }
+
+@media (max-width: 1024px) {
+  /* line 388, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  #main #weatherDetail #forecastWeek ul .weatherByDate {
+    width: 47%;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+    margin: 9px; } }
+
+@media (orientation: portrait) {
+  /* line 388, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  #main #weatherDetail #forecastWeek ul .weatherByDate {
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none; } }
+
+@media (min-width: 1280px) {
+  /* line 388, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  #main #weatherDetail #forecastWeek ul .weatherByDate {
+    width: 47%;
+    margin: 9px; } }
+
+@media (min-width: 1366px) {
+  /* line 388, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  #main #weatherDetail #forecastWeek ul .weatherByDate {
+    width: 31%;
+    margin: 12px; } }
+
+@media (min-width: 1600px) {
+  /* line 388, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  #main #weatherDetail #forecastWeek ul .weatherByDate {
+    width: 13%;
+    margin: 9px; } }
+
+@media (min-width: 1920px) {
+  /* line 388, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  #main #weatherDetail #forecastWeek ul .weatherByDate {
+    width: 13%;
+    margin: 9px; } }
+
+/* line 511, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate .dailyForecast {
+  opacity: 1;
+  z-index: 104;
+  -webkit-transition-property: opacity, transform;
+  -moz-transition-property: opacity, transform;
+  -o-transition-property: opacity, transform;
+  transition-property: opacity, transform;
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -moz-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -o-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -webkit-transition-delay: 0.1;
+  -moz-transition-delay: 0.1;
+  -o-transition-delay: 0.1;
+  transition-delay: 0.1; }
+
+/* line 515, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate .dailyForecast .cardReportDate {
+  color: white;
+  font-size: 1.5em; }
+
+/* line 517, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate .dailyForecast .thirds {
+  width: 100%;
+  margin-bottom: 10px; }
+
+/* line 519, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate .dailyForecast p {
+  color: #96afda; }
+
+/* line 525, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate .cardToday {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  margin: -24px 0 0 -50%;
+  width: 100%;
+  font-size: 3em !important;
+  text-transform: uppercase;
+  color: #b79718;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -moz-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -o-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0;
+  text-transform: uppercase; }
+
+/* line 532, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main #weatherDetail #forecastWeek ul .weatherByDate .cardToday.show {
+  opacity: 1; }
+
+@media (orientation: portrait) {
+  /* line 525, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+  #main #weatherDetail #forecastWeek ul .weatherByDate .cardToday {
+    font-size: 2em !important; } }
+
+/* line 543, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main .button {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.5em 1em;
+  position: relative;
+  padding: .8em;
+  cursor: pointer;
+  color: white;
+  font-family: 'Quattrocento', serif;
+  font-size: .9em;
+  text-transform: uppercase;
+  font-weight: 300;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -moz-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -o-transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  transition-timing-function: cubic-bezier(0.5, 0.25, 0.15, 1);
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s; }
+
+/* line 556, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main .button:hover {
+  background: rgba(255, 255, 255, 0.7);
+  color: black; }
+
+/* line 564, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main .weather-icon {
+  height: 70px;
+  width: 70px;
+  margin: 0 auto; }
+
+/* line 570, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main .partly-cloudy-night {
+  background: transparent url("../media/images/partly-cloudy-night.svg") center no-repeat; }
+
+/* line 574, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main .partly-cloudy-day {
+  background: transparent url("../media/images/partly-cloudy-day.svg") center no-repeat; }
+
+/* line 578, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main .snow {
+  background: transparent url("../media/images/snow.svg") center no-repeat; }
+
+/* line 582, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main .rain {
+  background: transparent url("../media/images/rain.svg") center no-repeat; }
+
+/* line 586, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main .wind {
+  background: transparent url("../media/images/wind.svg") center no-repeat; }
+
+/* line 590, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main .clear-day {
+  background: transparent url("../media/images/clear-day.svg") center no-repeat; }
+
+/* line 594, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main .clear-night {
+  background: transparent url("../media/images/clear-night.svg") center no-repeat; }
+
+/* line 598, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main .sleet {
+  background: transparent url("../media/images/sleet.svg") center no-repeat; }
+
+/* line 602, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main .clear-night {
+  background: transparent url("../media/images/clear-night.svg") center no-repeat; }
+
+/* line 606, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main .thunderstorms-day {
+  background: transparent url("../media/images/thunderstorms-day.svg") center no-repeat; }
+
+/* line 610, C:/Users/Brian/Projects/Grow/__NFW_Working__/css/app.scss */
+#main .thunderstorms-night {
+  background: transparent url("../media/images/thunderstorms-night.svg") center no-repeat; }
+
+@keyframes rotate {
+  from {
+    transform: rotate(359.5deg); }
+  to {
+    transform: rotate(0deg); } }
+
+/*# sourceMappingURL=app.css.map */
+
+/*# sourceMappingURL=app.css.map */

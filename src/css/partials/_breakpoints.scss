@@ -1,0 +1,52 @@
+$p-portrait: 320px;
+$p-landscape: 480px;
+
+/*-- device orientation width --*/
+$portrait:  768px;
+$landscape: 1024px;
+
+/*-- desktop variable widths --*/
+$desktop:  1025px;
+$sm-width: 1280px;
+$md-width: 1366px;
+$lg-width: 1600px;
+$xl-width: 1920px;
+
+/*-- desktop variable heights --*/
+$sm-height:650px;
+$md-height:750px;
+
+@mixin break($media, $width:1024px, $height:1024px) {
+    @if $media == phone {
+        @media (max-width: $p-portrait) { @content; }
+    }
+    @else if $media == tablet {
+        @if $width == $portrait {
+            @media (orientation:portrait) { @content; }            
+        } @else if $width == $landscape {
+            @media (max-width:$landscape) { @content; }
+        } @else if $height < $portrait and $width < $landscape {
+            @media (min-width:$height) and (max-width:$width) and (orientation:landscape) { @content; }
+        } @else if $height < $landscape and $width < $portrait {
+            @media (min-width:$width) and (max-width:$height) and (orientation:portrait) { @content; }
+        }
+    }
+    @else if $media == desktop {
+        @if $width > $desktop {
+            @if $height < $portrait {
+                @media (max-height: $height) and (min-width:$desktop) { @content; }
+            } @else {
+                @media (min-width: $width) { @content; }
+            }
+        } @else {
+            @media (min-width: $desktop) { @content; }
+        }
+    }
+}
+/*
+@mixin midWidth($minwidth, $maxWidth) {
+    @if ($minwidth > $landscape) and ($maxwidth < $md-width) {
+        @media (max-width: $maxwidth) and (min-width: $minwidth) { @content; }
+  }
+}
+*/
